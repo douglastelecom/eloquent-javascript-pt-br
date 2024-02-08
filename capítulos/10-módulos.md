@@ -4,7 +4,7 @@
 >"Escreva código fácil de deletar, não fácil de estender"
 >
 >—Tef, Programming is Terrible
-<div style="text-align: right">
+<div style="text-align: justify">
 O programa ideal tem uma estrutura cristalina. É fácil de explicar, e cada parte desempenha um papel bem definido.
 
 Um programa real típico cresce organicamente. Novas peças de funcionalidade são adicionadas conforme novas necessidades surgem. Estruturar - e preservar a estrutura - é trabalho adicional. É um trabalho que só compensará no futuro, na próxima vez que alguém trabalhar no programa. Portanto, é tentador negligenciá-lo e permitir que as partes do programa se tornem profundamente emaranhadas.
