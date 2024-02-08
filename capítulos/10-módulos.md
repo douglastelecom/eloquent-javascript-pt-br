@@ -6,12 +6,12 @@
 >—Tef, Programming is Terrible
 
 O programa ideal tem uma estrutura cristalina. É fácil de explicar, e cada parte desempenha um papel bem definido.
-<p style="text-align: justify">
+<p style='text-align: justify;'>
 Um programa real típico cresce organicamente. Novas peças de funcionalidade são adicionadas conforme novas necessidades surgem. Estruturar - e preservar a estrutura - é trabalho adicional. É um trabalho que só compensará no futuro, na próxima vez que alguém trabalhar no programa. Portanto, é tentador negligenciá-lo e permitir que as partes do programa se tornem profundamente emaranhadas.
 </p>
-<div style="text-align: justify">
+<div style='text-align: justify;'>
 Isso causa dois problemas práticos. Primeiro, entender um sistema assim é difícil. Se todas as peças podem se tocar, é difícil olhar para qualquer uma isoladamente. Você é forçado a construir uma compreensão holística de todo o conjunto. Em segundo lugar, se você quiser usar qualquer funcionalidade desse programa em outra situação, reescrevê-lo pode ser mais fácil do que tentar desemaranhá-lo do seu contexto.
-<div>
+</div>
 A expressão "grande bola de lama" é frequentemente usada para tais programas grandes e sem estrutura. Tudo fica grudado junto, e quando você tenta pegar uma peça, tudo se desfaz e suas mãos ficam sujas.
 
 ## Módulos
