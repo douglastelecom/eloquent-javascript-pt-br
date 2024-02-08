@@ -34,7 +34,7 @@ Apenas colocar seu código JavaScript em arquivos diferentes não satisfaz esses
 
 Projetar uma estrutura de módulo adequada para um programa pode ser difícil. Na fase em que você ainda está explorando o problema, tentando diferentes abordagens para ver o que funciona, você pode não querer se preocupar muito com isso, já que pode ser uma grande distração. Uma vez que você tenha algo que pareça sólido, esse é um bom momento para dar um passo atrás e organizá-lo.
 
-## Packages
+## PACOTES
 
 Uma das vantagens de construir um programa a partir de peças separadas e realmente poder executar essas peças individualmente é que você pode ser capaz de aplicar a mesma peça em diferentes programas.
 
@@ -61,5 +61,28 @@ Software é fácil e barato de copiar, então, uma vez que alguém o escreveu, d
 Por padrão, você possui os direitos autorais sobre o código que escreve, e outras pessoas só podem usá-lo com sua permissão. Mas porque algumas pessoas são apenas gentis e porque publicar um bom software pode ajudar a torná-lo um pouco famoso entre os programadores, muitos pacotes são publicados sob uma licença que permite explicitamente que outras pessoas o usem.
 
 A maioria do código no NPM é licenciada dessa forma. Algumas licenças exigem que você também publique o código que construiu em cima do pacote sob a mesma licença. Outras são menos exigentes, apenas exigindo que você mantenha a licença com o código conforme o distribui. A comunidade JavaScript geralmente usa o último tipo de licença. Ao usar pacotes de outras pessoas, certifique-se de estar ciente de sua licença.
+
+## MÓDULOS IMPROVISADOS
+
+Até 2015, a linguagem JavaScript não tinha um sistema de módulos integrado. No entanto, as pessoas estavam construindo sistemas grandes em JavaScript há mais de uma década e precisavam de módulos.
+
+Então, eles projetaram seus próprios sistemas de módulos em cima da linguagem. Você pode usar funções JavaScript para criar escopos locais e objetos para representar interfaces de módulos.
+
+Este é um módulo para ir entre nomes de dias e números (como retornados pelo método getDay do objeto Date). Sua interface consiste em weekDay.name e weekDay.number, e ele esconde os nomes de vínculo local dentro do escopo de uma expressão de função que é imediatamente invocada.
+
+```js
+const weekDay = function() {
+  const names = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                 "Thursday", "Friday", "Saturday"];
+  return {
+    name(number) { return names[number]; },
+    number(name) { return names.indexOf(name); }
+  };
+}();
+
+console.log(weekDay.name(weekDay.number("Sunday")));
+// → Sunday
+```
+
 
 </div>
