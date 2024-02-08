@@ -68,7 +68,7 @@ Até 2015, a linguagem JavaScript não tinha um sistema de módulos integrado. N
 
 Então, eles projetaram seus próprios sistemas de módulos em cima da linguagem. Você pode usar funções JavaScript para criar escopos locais e objetos para representar interfaces de módulos.
 
-Este é um módulo para ir entre nomes de dias e números (como retornados pelo método getDay do objeto Date). Sua interface consiste em weekDay.name e weekDay.number, e ele esconde os nomes de vínculo local dentro do escopo de uma expressão de função que é imediatamente invocada.
+Este é um módulo para ir entre nomes de dias e números (como retornados pelo método `getDay` do objeto `Date`). Sua interface consiste em `weekDay.name` e `weekDay.number`, e ele esconde os nomes de vínculo local dentro do escopo de uma expressão de função que é imediatamente invocada.
 
 ```js
 const weekDay = function() {
