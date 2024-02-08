@@ -8,7 +8,7 @@
 >
 >—Tef, Programming is Terrible
 
-<img src="../img/chapter_picture_10.jpg">
+![Módulos](../img/chapter_picture_10.jpg)
 
 O programa ideal tem uma estrutura cristalina. É fácil de explicar, e cada parte desempenha um papel bem definido.
 
