@@ -13,7 +13,7 @@ Isso causa dois problemas práticos. Primeiro, entender um sistema assim é dif�
 
 A expressão "grande bola de lama" é frequentemente usada para tais programas grandes e sem estrutura. Tudo fica grudado junto, e quando você tenta pegar uma peça, tudo se desfaz e suas mãos ficam sujas.
 
-##Módulos
+## Módulos
 
 Os módulos são uma tentativa de evitar esses problemas. Um módulo é uma parte do programa que especifica quais outras partes ele depende e qual funcionalidade ele fornece para que outros módulos usem (sua interface).
 
