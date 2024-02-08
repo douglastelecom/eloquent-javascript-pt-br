@@ -1,8 +1,9 @@
-###Capítulo 10
-#Módulos
+### Capítulo 10
+# Módulos
 
 >"Escreva código fácil de deletar, não fácil de estender"
->--Tef, Programming is Terrible
+>
+>—Tef, Programming is Terrible
 
 O programa ideal tem uma estrutura cristalina. É fácil de explicar, e cada parte desempenha um papel bem definido.
 
