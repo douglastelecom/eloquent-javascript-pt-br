@@ -8,7 +8,7 @@
 >
 >—Tef, Programming is Terrible
 
-<img src="../img/chapter_picture_10.jpg">
+<img style="margin-left: 27.5%" src="../img/chapter_picture_10.jpg">
 
 O programa ideal tem uma estrutura cristalina. É fácil de explicar, e cada parte desempenha um papel bem definido.
 
@@ -61,4 +61,5 @@ Software é fácil e barato de copiar, então, uma vez que alguém o escreveu, d
 Por padrão, você possui os direitos autorais sobre o código que escreve, e outras pessoas só podem usá-lo com sua permissão. Mas porque algumas pessoas são apenas gentis e porque publicar um bom software pode ajudar a torná-lo um pouco famoso entre os programadores, muitos pacotes são publicados sob uma licença que permite explicitamente que outras pessoas o usem.
 
 A maioria do código no NPM é licenciada dessa forma. Algumas licenças exigem que você também publique o código que construiu em cima do pacote sob a mesma licença. Outras são menos exigentes, apenas exigindo que você mantenha a licença com o código conforme o distribui. A comunidade JavaScript geralmente usa o último tipo de licença. Ao usar pacotes de outras pessoas, certifique-se de estar ciente de sua licença.
+
 </div>
