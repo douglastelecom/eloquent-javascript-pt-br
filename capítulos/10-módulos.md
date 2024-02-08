@@ -38,7 +38,7 @@ Projetar uma estrutura de módulo adequada para um programa pode ser difícil. N
 
 Uma das vantagens de construir um programa a partir de peças separadas e realmente poder executar essas peças individualmente é que você pode ser capaz de aplicar a mesma peça em diferentes programas.
 
-Mas como você configura isso? Digamos que eu queira usar a função parseINI do Capítulo 9 em outro programa. Se for claro no que a função depende (neste caso, nada), posso simplesmente copiar todo o código necessário para o meu novo projeto e usá-lo. Mas então, se eu encontrar um erro nesse código, provavelmente vou corrigi-lo no programa com o qual estou trabalhando no momento e esquecer de corrigi-lo também no outro programa.
+Mas como você configura isso? Digamos que eu queira usar a função `parseINI` do Capítulo 9 em outro programa. Se for claro no que a função depende (neste caso, nada), posso simplesmente copiar todo o código necessário para o meu novo projeto e usá-lo. Mas então, se eu encontrar um erro nesse código, provavelmente vou corrigi-lo no programa com o qual estou trabalhando no momento e esquecer de corrigi-lo também no outro programa.
 
 Uma vez que você comece a duplicar código, rapidamente perceberá que está desperdiçando tempo e energia movendo cópias ao redor e mantendo-as atualizadas.
 
@@ -68,7 +68,7 @@ Até 2015, a linguagem JavaScript não tinha um sistema de módulos integrado. N
 
 Então, eles projetaram seus próprios sistemas de módulos em cima da linguagem. Você pode usar funções JavaScript para criar escopos locais e objetos para representar interfaces de módulos.
 
-Este é um módulo para ir entre nomes de dias e números (como retornados pelo método `getDay` do objeto `Date`). Sua interface consiste em `weekDay.name` e `weekDay.number`, e ele esconde os nomes de vínculo local dentro do escopo de uma expressão de função que é imediatamente invocada.
+Este é um módulo para ir entre nomes e números de dias (como retornados pelo método `getDay` do objeto `Date`). Sua interface consiste em `weekDay.name` e `weekDay.number`, e ele esconde os nomes de vínculo local dentro do escopo de uma expressão de função que é imediatamente invocada.
 
 ```js
 const weekDay = function() {
@@ -82,6 +82,28 @@ const weekDay = function() {
 
 console.log(weekDay.name(weekDay.number("Sunday")));
 // → Sunday
+```
+Esse estilo de módulos fornece isolamento, até certo ponto, mas não declara dependências. Em vez disso, ele apenas coloca sua interface no escopo global e espera que suas dependências, se houver, façam o mesmo. Por muito tempo, esse foi o principal método usado na programação web, mas agora está praticamente obsoleto.
+
+Se quisermos tornar as relações de dependência parte do código, teremos que controlar o carregamento das dependências. Fazer isso requer ser capaz de executar strings como código. JavaScript pode fazer isso.
+
+## AVALIANDO DADOS COMO CÓDIGO
+
+Existem várias maneiras de pegar dados (strings de códigos) e executá-los como parte do programa atual.
+
+A maneira mais óbvia é o operador especial eval, que executará uma string no escopo atual. Isso geralmente é uma má ideia porque quebra algumas das propriedades que os escopos normalmente têm, como ser facilmente previsível qual ligação um determinado nome se refere.
+
+```js
+const x = 1;
+function evalAndReturnX(code) {
+  eval(code);
+  return x;
+}
+
+console.log(evalAndReturnX("var x = 2"));
+// → 2
+console.log(x);
+// → 1
 ```
 
 
