@@ -1,3 +1,5 @@
+<div align='justify'>
+
 ### Capítulo 10
 # Módulos
 
@@ -5,7 +7,7 @@
 >
 >—Tef, Programming is Terrible
 
-<div align='justify'>
+
 
 O programa ideal tem uma estrutura cristalina. É fácil de explicar, e cada parte desempenha um papel bem definido.
 
@@ -15,7 +17,7 @@ Isso causa dois problemas práticos. Primeiro, entender um sistema assim é dif�
 
 A expressão "grande bola de lama" é frequentemente usada para tais programas grandes e sem estrutura. Tudo fica grudado junto, e quando você tenta pegar uma peça, tudo se desfaz e suas mãos ficam sujas.
 
-</div>
+
 
 ## Módulos
 
@@ -30,3 +32,5 @@ Para separar os módulos dessa maneira, cada um precisa ter seu próprio escopo 
 Apenas colocar seu código JavaScript em arquivos diferentes não satisfaz esses requisitos. Os arquivos ainda compartilham o mesmo namespace global. Eles podem, intencional ou acidentalmente, interferir nos vínculos uns dos outros. E a estrutura de dependência permanece pouco clara. Podemos fazer melhor, como veremos mais adiante no capítulo.
 
 Projetar uma estrutura de módulo adequada para um programa pode ser difícil. Na fase em que você ainda está explorando o problema, tentando diferentes abordagens para ver o que funciona, você pode não querer se preocupar muito com isso, já que pode ser uma grande distração. Uma vez que você tenha algo que pareça sólido, esse é um bom momento para dar um passo atrás e organizá-lo.
+
+</div>
